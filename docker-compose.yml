@@ -8,8 +8,8 @@ services:
       dockerfile: Dockerfile
     restart: on-failure
     volumes:
-      - ./:/next-app
-      - /next-app/node_modules
-      - /next-app/.next
+      - ./:/usr/src/next-app
+      - /usr/src/next-app/node_modules
+      - /usr/src/next-app/.next
     ports:
       - 3000:3000
