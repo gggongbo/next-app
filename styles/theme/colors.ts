@@ -1,5 +1,6 @@
 export const white = '#FFFFFF';
 export const black = '#000000';
+export const orange = '#f78b16';
 
 export const text = {
   100: '#EBEBEB',
