@@ -1,19 +1,19 @@
 import { Book } from '@domain/cores';
 import { BookDTO } from '@domain/dtos';
-import { useUpdateEffect } from '@hooks/lifecycle';
-import { usePrevious } from '@hooks/state';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { useCallback, useState } from 'react';
 
 import BooksPage from './BooksPage';
 import BooksLayout from '../BooksLayout';
-import booksKeys from '../queryKeys';
 
+import { useUpdateEffect } from '@hooks/lifecycle';
+import { usePrevious } from '@hooks/state';
 import axios from '@lib/axios';
 import { lodash } from '@lib/lodash';
 import { useQuery } from '@lib/react-query';
-import routers from '@pages/routers';
+import booksKeys from '@utils/queryKeys';
+import routers from '@utils/routers';
 
 const BooksPageContainer: NextPage = function BooksPageContainer() {
   const router = useRouter();

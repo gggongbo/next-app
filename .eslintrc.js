@@ -69,6 +69,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'no-underscore-dangle': 'off',
     'no-unused-vars': 'off',
+    'import/no-extraneous-dependencies': 'off',
     '@typescript-eslint/no-empty-function': 'off',
   },
   settings: {

@@ -10,12 +10,12 @@ type ListBoxProps = {
   customStyle?: CSSProp;
 };
 
-const ListBoxBlock = styled.div<Pick<ListBoxProps, 'customStyle'>>`
+const ListBoxBlock = styled.div<{ customStyle?: CSSProp }>`
   width: 100%;
   ${props => props.customStyle};
 `;
 
-const ListItemBlock = styled.div<Pick<ListBoxProps, 'customStyle'>>`
+const ListItemBlock = styled.div<{ customStyle?: CSSProp }>`
   display: inline-flex;
   ${props => props.customStyle};
 `;

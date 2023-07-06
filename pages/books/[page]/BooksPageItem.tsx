@@ -1,8 +1,8 @@
-import { Text } from '@components/atom';
-import Image from '@components/atom/Image';
 import { Book } from '@domain/cores';
 import { FC } from 'react';
 
+import { Text } from '@components/atom';
+import Image from '@components/atom/Image';
 import styled from '@lib/styled-components';
 
 const BookItemBlock = styled.div`

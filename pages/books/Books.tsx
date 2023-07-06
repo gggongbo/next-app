@@ -1,7 +1,7 @@
-import { Text } from '@components/atom';
-import { Button, InputText } from '@components/molecule';
 import { FC } from 'react';
 
+import { Text } from '@components/atom';
+import { Button, InputText } from '@components/molecule';
 import styled, { css, useTheme } from '@lib/styled-components';
 
 const InputBlock = styled.div`

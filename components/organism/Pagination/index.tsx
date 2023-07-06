@@ -1,9 +1,9 @@
-import { useUpdateEffect } from '@hooks/lifecycle';
-import { useWindowSize } from '@hooks/window';
 import { FC, useCallback, useState } from 'react';
 
 import PaginationItem from './PaginationItem';
 
+import { useUpdateEffect } from '@hooks/lifecycle';
+import { useWindowSize } from '@hooks/window';
 import { CSSProp } from '@lib/styled-components';
 
 type PaginationProps = {

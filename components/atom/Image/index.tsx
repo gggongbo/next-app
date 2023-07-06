@@ -11,16 +11,24 @@ type ImageProps = {
   customStyle?: CSSProp;
 };
 
-const ImageBlock = styled.div<
-  Pick<ImageProps, 'width' | 'height' | 'customStyle'>
->`
+const ImageBlock = styled.div<{
+  width?: number | string;
+  height?: number | string | undefined;
+  customStyle?: CSSProp;
+}>`
   width: ${({ width }) => (lodash.isString(width) ? width : `${width || 0}px`)};
   height: ${({ height }) =>
     !height || lodash.isString(height) ? height : `${height || 0}px`};
   ${props => props.customStyle};
 `;
 
-const ImageContent = styled.div<ImageProps>`
+const ImageContent = styled.div<{
+  src: string;
+  width?: number | string;
+  height?: number | string | undefined;
+  aspectRatio?: number;
+  customStyle?: CSSProp;
+}>`
   width: 100%;
   height: ${({ height }) =>
     !height || lodash.isString(height) ? height : `${height || 0}px`};

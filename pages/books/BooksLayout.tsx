@@ -1,6 +1,6 @@
-import { Text } from '@components/atom';
 import { FC, ReactNode } from 'react';
 
+import { Text } from '@components/atom';
 import styled from '@lib/styled-components';
 
 const BooksBlock = styled.div`

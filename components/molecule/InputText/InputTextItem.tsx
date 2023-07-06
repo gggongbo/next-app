@@ -6,8 +6,8 @@ import styled, { CSSProp, css } from '@lib/styled-components';
 const InputTextBlock = styled.div<{
   width: number | string;
   height: number | string;
-  isFocused?: boolean;
-  isError?: boolean;
+  isFocused: boolean;
+  isError: boolean;
   disabled?: boolean;
   customStyle?: CSSProp;
   focusedStyle?: CSSProp;

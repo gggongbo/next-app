@@ -1,7 +1,7 @@
-import { Text } from '@components/atom';
-import { LinkBox } from '@components/molecule';
 import { FC } from 'react';
 
+import { Text } from '@components/atom';
+import { LinkBox } from '@components/molecule';
 import { lodash } from '@lib/lodash';
 import styled, { CSSProp, css, useTheme } from '@lib/styled-components';
 
@@ -17,9 +17,7 @@ type PaginationItemProps = {
   handlePageChange?: (e: any) => void;
 };
 
-const PaginationItemBlock = styled.div<
-  Pick<PaginationItemProps, 'customStyle'>
->`
+const PaginationItemBlock = styled.div<{ customStyle?: CSSProp }>`
   display: flex;
   flex-direction: row;
   width: 100%;
