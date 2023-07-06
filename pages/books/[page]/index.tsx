@@ -12,7 +12,7 @@ import { usePrevious } from '@hooks/state';
 import axios from '@lib/axios';
 import { lodash } from '@lib/lodash';
 import { useQuery } from '@lib/react-query';
-import booksKeys from '@utils/queryKeys';
+import { booksKeys } from '@utils/queryUtils';
 import routers from '@utils/routers';
 
 const BooksPageContainer: NextPage = function BooksPageContainer() {

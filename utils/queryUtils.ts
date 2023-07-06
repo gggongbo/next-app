@@ -12,4 +12,9 @@ const queryClientOption = {
   },
 };
 
-export { queryClientOption };
+const booksKeys = {
+  searchBook: (params?: { search: string; page: number }) =>
+    ['searchBook', params] as const,
+};
+
+export { queryClientOption, booksKeys };
