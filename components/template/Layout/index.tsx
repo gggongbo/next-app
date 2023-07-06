@@ -1,7 +1,7 @@
-import { Header } from '@components/organism';
 import Head from 'next/head';
 import { FC } from 'react';
 
+import { Header } from '@components/organism';
 import styled from '@lib/styled-components';
 
 const LayoutBlock = styled.div`

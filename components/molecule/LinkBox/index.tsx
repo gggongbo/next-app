@@ -14,12 +14,18 @@ type LinkBoxProps = {
   children: ReactNode;
 };
 
-const LinkBoxBlock = styled.div<Pick<LinkBoxProps, 'customStyle'>>`
+const LinkBoxBlock = styled.div<{ customStyle?: CSSProp }>`
   width: 100%;
   ${props => props.customStyle};
 `;
 
-const StyleBlock = styled.div<Omit<LinkBoxProps, 'router' | 'onClick'>>`
+const StyleBlock = styled.div<{
+  selected?: boolean;
+  disabled?: boolean;
+  customStyle?: CSSProp;
+  selectedStyle?: CSSProp;
+  disabledStyle?: CSSProp;
+}>`
   ${props => props.customStyle};
   ${props => props.selected && props.selectedStyle};
   ${props => props.disabled && props.disabledStyle};

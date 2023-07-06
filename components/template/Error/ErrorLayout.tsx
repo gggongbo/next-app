@@ -1,11 +1,11 @@
-import { Text } from '@components/atom';
-import { Button } from '@components/molecule';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 import Layout from '../Layout';
 
+import { Text } from '@components/atom';
+import { Button } from '@components/molecule';
 import styled, { css, useTheme } from '@lib/styled-components';
 
 const ErrorLayoutBlock = styled.div`

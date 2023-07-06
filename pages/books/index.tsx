@@ -4,7 +4,8 @@ import { useCallback, useState } from 'react';
 
 import Books from './Books';
 import BooksLayout from './BooksLayout';
-import routers from '../routers';
+
+import routers from '@utils/routers';
 
 const BooksContainer: NextPage = function BooksContainer() {
   const router = useRouter();
